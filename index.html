@@ -17,259 +17,280 @@
 <svg id="radar"></svg>
 
 <script>
-  radar_visualization({
-    svg_id: "radar",
-    width: 1450,
-    height: 1000,
-    colors: {
-      background: "#fff",
-      grid: "#bbb",
-      inactive: "#ddd"
-    },
-    title: "Shelf Tech Radar — 2022.01",
-    quadrants: [
-      {name: "Languages"},
-      {name: "Infrastructure"},
-      {name: "Datastores"},
-      {name: "Frameworks"},
-    ],
-    rings: [
-      {name: "ADOPT", color: "#93c47d"},
-      {name: "TRIAL", color: "#93d2c2"},
-      {name: "ASSESS", color: "#fbdb84"},
-      {name: "HOLD", color: "#efafa9"}
-    ],
-    print_layout: true,
-    // zoomed_quadrant: 0,
-    //ENTRIES
-    entries: [
-      {
-        "quadrant": 2,
-        "ring": 0,
-        "label": "AWS DynamoDB",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 0,
-        "label": "AWS S3",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 3,
-        "label": "MongoDB",
-        "active": true,
-        "moved": -1
-      },
-      {
-        "quadrant": 2,
-        "ring": 0,
-        "label": "Elasticsearch",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 2,
-        "ring": 2,
-        "label": "PostgresQL",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 1,
-        "label": "AWS Glue",
-        "active": true,
-        "moved": 1
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "AWS Athena",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "AWS CloudFront",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "AWS Fargate",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "AWS SageMaker",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 3,
-        "label": "AWS AppSync",
-        "active": true,
-        "moved": -1
-      },
-      {
-        "quadrant": 1,
-        "ring": 2,
-        "label": "Amazon EFS",
-        "active": true,
-        "moved": 1
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "AWS API Gateway",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "AWS SES",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "Auth0",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 0,
-        "ring": 0,
-        "label": "Terraform",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "AWS Lambda",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 0,
-        "ring": 0,
-        "label": "TypeScript",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "React",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 3,
-        "label": "Vue.js",
-        "active": true,
-        "moved": -1
-      },
-      {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "Next.js",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 3,
-        "label": "Meteor.js",
-        "active": true,
-        "moved": -1
-      },
-      {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "Serverless",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 3,
-        "ring": 0,
-        "label": "Storybook",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 0,
-        "ring": 3,
-        "label": "GraphQL",
-        "active": true,
-        "moved": -1
-      },
-      {
-        "quadrant": 0,
-        "ring": 3,
-        "label": "JavaScript",
-        "active": true,
-        "moved": -1
-      },
-      {
-        "quadrant": 0,
-        "ring": 0,
-        "label": "Python",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 0,
-        "ring": 0,
-        "label": "OpenAPI (Swagger)",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "AWS SNS",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 1,
-        "label": "AWS Step Functions",
-        "active": true,
-        "moved": 0
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "AWS Kinesis",
-        "active": true,
-        "moved": 1
-      },
-      {
-        "quadrant": 1,
-        "ring": 0,
-        "label": "AWS SQS",
-        "active": true,
-        "moved": 0
-      }
-    ]
-    //ENTRIES
-  });
+    radar_visualization({
+        svg_id: "radar",
+        width: 1450,
+        height: 1000,
+        colors: {
+            background: "#fff",
+            grid: "#bbb",
+            inactive: "#ddd"
+        },
+        title: "Shelf Tech Radar — 2024.07",
+        quadrants: [
+            {name: "Languages"},
+            {name: "Infrastructure"},
+            {name: "Datastores"},
+            {name: "Frameworks"},
+        ],
+        rings: [
+            {name: "ADOPT", color: "#93c47d"},
+            {name: "TRIAL", color: "#93d2c2"},
+            {name: "ASSESS", color: "#fbdb84"},
+            {name: "HOLD", color: "#efafa9"}
+        ],
+        print_layout: true,
+        // zoomed_quadrant: 0,
+        //ENTRIES
+        entries: [
+            {
+                "quadrant": 2,
+                "ring": 0,
+                "label": "AWS DynamoDB",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 2,
+                "ring": 0,
+                "label": "AWS S3",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 2,
+                "ring": 3,
+                "label": "MongoDB",
+                "active": true,
+                "moved": -1
+            },
+            {
+                "quadrant": 2,
+                "ring": 0,
+                "label": "Elasticsearch",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 2,
+                "ring": 2,
+                "label": "PostgresQL",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 1,
+                "ring": 1,
+                "label": "AWS Glue",
+                "active": true,
+                "moved": 1
+            },
+            {
+                "quadrant": 1,
+                "ring": 0,
+                "label": "AWS Athena",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 1,
+                "ring": 0,
+                "label": "AWS CloudFront",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 1,
+                "ring": 0,
+                "label": "AWS Fargate",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 1,
+                "ring": 0,
+                "label": "AWS SageMaker",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 1,
+                "ring": 3,
+                "label": "AWS AppSync",
+                "active": true,
+                "moved": -1
+            },
+            {
+                "quadrant": 1,
+                "ring": 2,
+                "label": "Amazon EFS",
+                "active": true,
+                "moved": 1
+            },
+            {
+                "quadrant": 1,
+                "ring": 0,
+                "label": "AWS API Gateway",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 1,
+                "ring": 0,
+                "label": "AWS SES",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 1,
+                "ring": 0,
+                "label": "Auth0",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 0,
+                "ring": 0,
+                "label": "Terraform",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 1,
+                "ring": 0,
+                "label": "AWS Lambda",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 0,
+                "ring": 0,
+                "label": "TypeScript",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 3,
+                "ring": 0,
+                "label": "React",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 3,
+                "ring": 3,
+                "label": "Vue.js",
+                "active": true,
+                "moved": -1
+            },
+            {
+                "quadrant": 3,
+                "ring": 0,
+                "label": "Next.js",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 3,
+                "ring": 3,
+                "label": "Meteor.js",
+                "active": true,
+                "moved": -1
+            },
+            {
+                "quadrant": 3,
+                "ring": 0,
+                "label": "Serverless",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 3,
+                "ring": 0,
+                "label": "Storybook",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 0,
+                "ring": 3,
+                "label": "GraphQL",
+                "active": true,
+                "moved": -1
+            },
+            {
+                "quadrant": 0,
+                "ring": 3,
+                "label": "JavaScript",
+                "active": true,
+                "moved": -1
+            },
+            {
+                "quadrant": 0,
+                "ring": 0,
+                "label": "Python",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 0,
+                "ring": 0,
+                "label": "OpenAPI (Swagger)",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 1,
+                "ring": 0,
+                "label": "AWS SNS",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 1,
+                "ring": 1,
+                "label": "AWS Step Functions",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 1,
+                "ring": 0,
+                "label": "AWS Kinesis",
+                "active": true,
+                "moved": 1
+            },
+            {
+                "quadrant": 1,
+                "ring": 0,
+                "label": "AWS SQS",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 3,
+                "ring": 0,
+                "label": "Styled Components",
+                "active": true,
+                "moved": 1
+            },
+            {
+                "quadrant": 3,
+                "ring": 0,
+                "label": "SWR",
+                "active": true,
+                "moved": 0
+            },
+            {
+                "quadrant": 3,
+                "ring": 2,
+                "label": "Tailwind",
+                "active": false,
+                "moved": 1
+            }
+        ]
+        //ENTRIES
+    });
 </script>
 
 <table>
@@ -342,7 +363,8 @@
             <ul>
                 <li><a href="https://shelf.io/careers/" target="_blank" referrerpolicy="no-referrer">Careers Page</a>
                 </li>
-                <li><a href="https://boards.greenhouse.io/shelf" target="_blank" referrerpolicy="no-referrer">See our open
+                <li><a href="https://boards.greenhouse.io/shelf" target="_blank" referrerpolicy="no-referrer">See our
+                    open
                     positions</a></li>
             </ul>
             </p>
