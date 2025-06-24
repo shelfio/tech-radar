@@ -30,6 +30,12 @@ const CATEGORIES = [
         description: "Development operations tools for building, testing, deploying, and monitoring applications."
     },
     {
+        _id: 'security_identity',
+        name: 'Security & Identity',
+        icon: '🔒',
+        description: "Security, identity management, compliance, and threat detection tools for protecting applications and data."
+    },
+    {
         _id: 'business_tools',
         name: 'Business Tools',
         icon: '💼',
@@ -91,27 +97,21 @@ const pageData = {
                 { "name": "Amazon SES", "icon": "aws.amazon.com", "usage": "Email sending service for transactional and marketing emails" },
                 { "name": "Amazon SNS", "icon": "aws.amazon.com", "usage": "Notification service for sending messages to subscribers via multiple protocols" },
                 { "name": "Amazon API Gateway", "icon": "aws.amazon.com", "usage": "Managed service for creating, publishing, and managing APIs at scale" },
-                { "name": "AWS IAM", "icon": "aws.amazon.com", "usage": "Identity and access management service for securely controlling access to AWS services" },
                 { "name": "Amazon Kinesis", "icon": "aws.amazon.com", "usage": "Platform for real-time data streaming and analytics" },
                 { "name": "Amazon SageMaker", "icon": "aws.amazon.com", "usage": "Machine learning platform for building, training, and deploying ML models" },
                 { "name": "Stripe", "icon": "stripe.com", "usage": "Payment processing platform for online businesses" },
                 { "name": "Mixpanel", "icon": "mixpanel.com", "usage": "Product analytics platform for tracking user interactions and behavior" },
                 { "name": "Hotjar", "icon": "hotjar.com", "usage": "User behavior analytics platform for understanding how users interact with websites through heatmaps and recordings" },
                 { "name": "PyTorch", "icon": "pytorch.org", "usage": "Open source machine learning library for Python based on Torch" },
-                { "name": "Auth0", "icon": "auth0.com", "usage": "Identity platform for application authentication and authorization" },
                 { "name": "Streamlit", "icon": "streamlit.io", "usage": "Open-source framework for creating data science and machine learning web apps" },
                 { "name": "OpenAPI Specification", "icon": "swagger.io", "usage": "Specification for describing REST APIs with standardized documentation" },
                 { "name": "AWS Step Functions", "icon": "aws.amazon.com", "usage": "Serverless orchestration service for coordinating distributed applications" },
-                { "name": "AWS Key Management Service", "icon": "aws.amazon.com", "usage": "Managed service for creating and controlling encryption keys" },
                 { "name": "Amazon Kinesis Firehose", "icon": "aws.amazon.com", "usage": "Data delivery service for loading streaming data into AWS data stores" },
                 { "name": "SpaCy", "icon": "spacy.io", "usage": "Industrial-strength natural language processing library for Python" },
                 { "name": "Gitbook", "icon": "gitbook.com", "usage": "Documentation platform for creating and sharing knowledge bases" },
                 { "name": "Transformers", "icon": "huggingface.co", "usage": "State-of-the-art machine learning library for natural language processing" },
                 { "name": "Amazon QuickSight", "icon": "aws.amazon.com", "usage": "Business intelligence service for creating interactive dashboards and visualizations" },
-                { "name": "AWS WAF", "icon": "aws.amazon.com", "usage": "Web application firewall for protecting web applications from common exploits" },
-                { "name": "AWS Certificate Manager", "icon": "aws.amazon.com", "usage": "Service for provisioning and managing SSL/TLS certificates" },
-                { "name": "Crowdin", "icon": "crowdin.com", "usage": "Localization management platform for translating applications and content" },
-                { "name": "Whistic", "icon": "whistic.com", "usage": "Security and compliance platform for managing vendor risk assessments and security questionnaires" }
+                { "name": "Crowdin", "icon": "crowdin.com", "usage": "Localization management platform for translating applications and content" }
             ]
         },
         "devops": {
@@ -142,13 +142,24 @@ const pageData = {
                 { "name": "Amazon ECR", "icon": "aws.amazon.com", "usage": "Container registry service for storing and managing Docker container images" },
                 { "name": "StatusPage.io", "icon": "statuspage.io", "usage": "Status page service for communicating system status to users" },
                 { "name": "ngrok", "icon": "ngrok.com", "usage": "Secure tunneling service for exposing local servers to the internet" },
-                { "name": "AWS CloudTrail", "icon": "aws.amazon.com", "usage": "Service for logging and monitoring API calls and user activity" },
                 { "name": "Esbuild", "icon": "esbuild.github.io", "usage": "Extremely fast JavaScript bundler and minifier" },
                 { "name": "Studio 3T", "icon": "studio3t.com", "usage": "Professional GUI and IDE for MongoDB with advanced query and aggregation tools" },
-                { "name": "Amazon GuardDuty", "icon": "aws.amazon.com", "usage": "Threat detection service for monitoring malicious activity and unauthorized behavior" },
                 { "name": "Lerna", "icon": "lerna.js.org", "usage": "Tool for managing JavaScript projects with multiple packages in a single repository (monorepo)" },
                 { "name": "OpsLevel", "icon": "opslevel.com", "usage": "Service catalog and developer portal for managing microservices and infrastructure" },
                 { "name": "Script Kit", "icon": "scriptkit.com", "usage": "Tool for creating and running scripts with a simple interface for automating tasks and workflows" }
+            ]
+        },
+        "security_identity": {
+            "tools": [
+                { "name": "AWS IAM", "icon": "aws.amazon.com", "usage": "Identity and access management service for securely controlling access to AWS services" },
+                { "name": "Auth0", "icon": "auth0.com", "usage": "Identity platform for application authentication and authorization" },
+                { "name": "AWS Key Management Service", "icon": "aws.amazon.com", "usage": "Managed service for creating and controlling encryption keys" },
+                { "name": "AWS WAF", "icon": "aws.amazon.com", "usage": "Web application firewall for protecting web applications from common exploits" },
+                { "name": "AWS Certificate Manager", "icon": "aws.amazon.com", "usage": "Service for provisioning and managing SSL/TLS certificates" },
+                { "name": "Whistic", "icon": "whistic.com", "usage": "Security and compliance platform for managing vendor risk assessments and security questionnaires" },
+                { "name": "Amazon GuardDuty", "icon": "aws.amazon.com", "usage": "Threat detection service for monitoring malicious activity and unauthorized behavior" },
+                { "name": "AWS CloudTrail", "icon": "aws.amazon.com", "usage": "Service for logging and monitoring API calls and user activity" },
+                { "name": "1Password", "icon": "1password.com", "usage": "Password manager for securing and managing login credentials" }
             ]
         },
         "business_tools": {
@@ -165,7 +176,6 @@ const pageData = {
                 { "name": "Zeplin", "icon": "zeplin.io", "usage": "Collaboration tool for designers and developers to handoff design specifications" },
                 { "name": "Salesforce", "icon": "salesforce.com", "usage": "Customer relationship management (CRM) platform for sales and marketing" },
                 { "name": "Medium", "icon": "medium.com", "usage": "Publishing platform for sharing ideas and stories through articles" },
-                { "name": "1Password", "icon": "1password.com", "usage": "Password manager for securing and managing login credentials" },
                 { "name": "drawio", "icon": "diagrams.net", "usage": "Diagramming tool for creating flowcharts, wireframes, and technical diagrams" },
                 { "name": "DocuSign", "icon": "docusign.com", "usage": "Electronic signature platform for secure document signing and workflow automation" },
                 { "name": "Productboard", "icon": "productboard.com", "usage": "Product management platform for prioritizing features and roadmap planning" },
