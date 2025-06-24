@@ -11,11 +11,48 @@
             return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
         }
 
+        const CATEGORIES = [
+            {
+                _id: 'application_and_data',
+                name: 'Application and Data',
+                icon: '🖥️',
+                description: "Core infrastructure components including caching systems, application hosting platforms, and development frameworks that power our services."
+            },
+            {
+                _id: 'databases_data_warehouse_data_storage',
+                name: 'Databases, Data Warehouse, Data Storage',
+                icon: '🗄️',
+                description: "Database systems, data warehouses, and data storage solutions for scalable, reliable data management and analytics."
+            },
+            {
+                _id: 'aaa_ai_agents_automation',
+                name: 'AAA - AI, Agents, Automation',
+                icon: '🤖',
+                description: "Intelligent AI agents and assistants that enhance productivity and accelerate software development workflows."
+            },
+            {
+                _id: 'utilities',
+                name: 'Utilities',
+                icon: '🔧',
+                description: "Third-party services and specialized tools that enhance development capabilities and provide additional functionality."
+            },
+            {
+                _id: 'devops',
+                name: 'DevOps',
+                icon: '⚙️',
+                description: "Development operations tools for building, testing, deploying, and monitoring applications."
+            },
+            {
+                _id: 'business_tools',
+                name: 'Business Tools',
+                icon: '💼',
+                description: "Productivity and business management tools that support operations and collaboration."
+            }
+        ];
+
         const pageData = {
             techStack: {
-                "Application and Data": {
-                    "icon": "🖥️",
-                    "description": "Core infrastructure components including caching systems, application hosting platforms, and development frameworks that power our services.",
+                "application_and_data": {
                     "tools": [
                         { "name": "React", "icon": "react.dev", "usage": "JavaScript library for building user interfaces with component-based architecture" },
                         { "name": "Node.js", "icon": "nodejs.org", "usage": "JavaScript runtime built on Chrome's V8 JavaScript engine for server-side development" },
@@ -41,9 +78,7 @@
                         { "name": "Radix UI", "icon": "radix-ui.com", "usage": "Low-level UI primitives and components for building high-quality design systems and web apps" },
                     ]
                 },
-                "Databases, Data Warehouse, Data Storage": {
-                    "icon": "🗄️",
-                    "description": "Database systems, data warehouses, and data storage solutions for scalable, reliable data management and analytics.",
+                "databases_data_warehouse_data_storage": {
                     "tools": [
                         { "name": "MongoDB", "icon": "mongodb.com", "usage": "NoSQL document database designed for modern application development and cloud computing" },
                         { "name": "Amazon DynamoDB", "icon": "aws.amazon.com", "usage": "NoSQL database service for applications that need consistent, single-digit millisecond latency" },
@@ -53,9 +88,7 @@
                         { "name": "Databricks", "icon": "databricks.com", "usage": "Unified analytics platform for big data processing, machine learning, and collaborative data science" },
                     ]
                 },
-                "AAA - AI, Agents, Automation": {
-                    "icon": "🤖",
-                    "description": "Intelligent AI agents and assistants that enhance productivity and accelerate software development workflows.",
+                "aaa_ai_agents_automation": {
                     "tools": [
                         { "name": "Claude Code", "icon": "claude.ai", "usage": "AI coding assistant for writing, debugging, and refactoring code with advanced reasoning capabilities" },
                         { "name": "GitHub Copilot", "icon": "github.com", "usage": "AI pair programmer that suggests code and entire functions" },
@@ -65,9 +98,7 @@
                         { "name": "LangChain", "icon": "langchain.com", "usage": "Framework for developing applications powered by language models" },
                     ]
                 },
-                "Utilities": {
-                    "icon": "🔧",
-                    "description": "Third-party services and specialized tools that enhance development capabilities and provide additional functionality.",
+                "utilities": {
                     "tools": [
                         { "name": "Amazon Route 53", "icon": "aws.amazon.com", "usage": "Scalable domain name system (DNS) web service" },
                         { "name": "Amazon SES", "icon": "aws.amazon.com", "usage": "Email sending service for transactional and marketing emails" },
@@ -95,9 +126,7 @@
                         { "name": "Crowdin", "icon": "crowdin.com", "usage": "Localization management platform for translating applications and content" }
                     ]
                 },
-                "DevOps": {
-                    "icon": "⚙️",
-                    "description": "Development operations tools for building, testing, deploying, and monitoring applications.",
+                "devops": {
                     "tools": [
                         { "name": "Git", "icon": "git-scm.com", "usage": "Distributed version control system for tracking code changes" },
                         { "name": "GitHub", "icon": "github.com", "usage": "Code hosting platform for version control and collaboration using Git" },
@@ -134,9 +163,7 @@
                         { "name": "Script Kit", "icon": "scriptkit.com", "usage": "Tool for creating and running scripts with a simple interface for automating tasks and workflows" }
                     ]
                 },
-                "Business Tools": {
-                    "icon": "💼",
-                    "description": "Productivity and business management tools that support operations and collaboration.",
+                "business_tools": {
                     "tools": [
                         { "name": "Slack", "icon": "slack.com", "usage": "Team collaboration platform for messaging, file sharing, and workflow integration" },
                         { "name": "Jira", "icon": "atlassian.com", "usage": "Project management and issue tracking tool for agile development teams" },
@@ -693,7 +720,13 @@
 
         function renderTechStack() {
             const container = document.getElementById('tech-stack-content');
-            Object.entries(pageData.techStack).forEach(([categoryName, categoryData]) => {
+            Object.entries(pageData.techStack).forEach(([categoryId, categoryData]) => {
+                const category = CATEGORIES.find(cat => cat._id === categoryId);
+
+                if (!category) {
+                    console.warn(`Category with ID '${categoryId}' not found in CATEGORIES array`);
+                    return;
+                }
 
                 const categoryDiv = document.createElement('div');
                 categoryDiv.className = 'category-section';
@@ -702,18 +735,18 @@
                     <button class="category-header"
                             type="button"
                             aria-expanded="true"
-                            aria-controls="content-${categoryName.replace(/\s+/g, '-').toLowerCase()}"
-                            onclick="toggleCategory('${categoryName.replace(/\s+/g, '-').toLowerCase()}')">
-                        <div class="category-icon">${categoryData.icon}</div>
-                        <h2 class="category-title">${categoryName}</h2>
-                        <div class="collapse-toggle" id="toggle-${categoryName.replace(/\s+/g, '-').toLowerCase()}" aria-hidden="true">
+                            aria-controls="content-${categoryId}"
+                            onclick="toggleCategory('${categoryId}')">
+                        <div class="category-icon">${category.icon}</div>
+                        <h2 class="category-title">${category.name}</h2>
+                        <div class="collapse-toggle" id="toggle-${categoryId}" aria-hidden="true">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="3" viewBox="0 0 18 3">
                                 <path fill="#565656" fill-rule="evenodd" d="M0 .5h18v2H0z"></path>
                             </svg>
                         </div>
                     </button>
-                    <div class="category-content" id="content-${categoryName.replace(/\s+/g, '-').toLowerCase()}">
-                        <p class="category-description">${categoryData.description}</p>
+                    <div class="category-content" id="content-${categoryId}">
+                        <p class="category-description">${category.description}</p>
                         <div class="tools-grid">
                             ${categoryData.tools.map(tool => `
                                 <div class="tool-card">
