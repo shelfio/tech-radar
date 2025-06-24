@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://shelf.io/wp-content/uploads/2019/04/favicon.png">
+    <link rel="stylesheet" href="index.css">
+    <title>Shelf Tech Stack</title>
+    <script src="index.js"></script>
+    <script>
+        function getFaviconUrl(domain) {
+            return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
+        }
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Shelf Tech Stack</h1>
+                <p>Discover the tools and technologies used to build Shelf's innovative products and services.</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+
+        <div id="tech-stack-content">
+            <!-- Content will be rendered here by JavaScript -->
+        </div>
+    </div>
+
+    <script>
+        renderTechStack();
+
+        function renderTechStack() {
+            const container = document.getElementById('tech-stack-content');
+            Object.entries(pageData.techStack).forEach(([categoryId, categoryData]) => {
+                const category = CATEGORIES.find(cat => cat._id === categoryId);
+
+                if (!category) {
+                    console.warn(`Category with ID '${categoryId}' not found in CATEGORIES array`);
+                    return;
+                }
+
+                const categoryDiv = document.createElement('div');
+                categoryDiv.className = 'category-section';
+
+                categoryDiv.innerHTML = `
+                    <button class="category-header"
+                            type="button"
+                            aria-expanded="true"
+                            aria-controls="content-${categoryId}"
+                            onclick="toggleCategory('${categoryId}')">
+                        <div class="category-icon">${category.icon}</div>
+                        <h2 class="category-title">${category.name}</h2>
+                        <div class="collapse-toggle" id="toggle-${categoryId}" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="3" viewBox="0 0 18 3">
+                                <path fill="#565656" fill-rule="evenodd" d="M0 .5h18v2H0z"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="category-content" id="content-${categoryId}">
+                        <p class="category-description">${category.description}</p>
+                        <div class="tools-grid">
+                            ${categoryData.tools.map(tool => `
+                                <div class="tool-card">
+                                    <div class="icon-container">
+                                        <div class="icon-placeholder"></div>
+                                        <img src="${getFaviconUrl(tool.icon)}" alt="${tool.name}" class="tool-icon loading" onload="handleImageLoad(this)">
+                                    </div>
+                                    <span class="tool-name">${tool.name}</span>
+                                    <div class="tooltip">${tool.usage}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+
+                container.appendChild(categoryDiv);
+            });
+
+        }
+
+        function toggleCategory(categoryId) {
+            const content = document.getElementById(`content-${categoryId}`);
+            const toggle = document.getElementById(`toggle-${categoryId}`);
+            const header = document.querySelector(`[aria-controls="content-${categoryId}"]`);
+
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+                header.setAttribute('aria-expanded', 'true');
+                toggle.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="3" viewBox="0 0 18 3">
+                        <path fill="#565656" fill-rule="evenodd" d="M0 .5h18v2H0z"></path>
+                    </svg>
+                `;
+            } else {
+                content.classList.add('collapsed');
+                header.setAttribute('aria-expanded', 'false');
+                toggle.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19">
+                        <path fill="#565656" fill-rule="evenodd" d="M8 8.5v-8h2v8h8v2h-8v8H8v-8H0v-2h8z"></path>
+                    </svg>
+                `;
+            }
+        }
+
+
+        function handleImageLoad(img) {
+            const placeholder = img.parentElement.querySelector('.icon-placeholder');
+            img.classList.remove('loading');
+            if (placeholder) {
+                placeholder.classList.add('hidden');
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
