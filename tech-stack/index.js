@@ -110,7 +110,8 @@ const pageData = {
                 { "name": "Amazon QuickSight", "icon": "aws.amazon.com", "usage": "Business intelligence service for creating interactive dashboards and visualizations" },
                 { "name": "AWS WAF", "icon": "aws.amazon.com", "usage": "Web application firewall for protecting web applications from common exploits" },
                 { "name": "AWS Certificate Manager", "icon": "aws.amazon.com", "usage": "Service for provisioning and managing SSL/TLS certificates" },
-                { "name": "Crowdin", "icon": "crowdin.com", "usage": "Localization management platform for translating applications and content" }
+                { "name": "Crowdin", "icon": "crowdin.com", "usage": "Localization management platform for translating applications and content" },
+                { "name": "Whistic", "icon": "whistic.com", "usage": "Security and compliance platform for managing vendor risk assessments and security questionnaires" }
             ]
         },
         "devops": {
