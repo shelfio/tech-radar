@@ -64,7 +64,6 @@ const pageData = {
                 { "name": "DataGrip", "icon": "jetbrains.com", "usage": "Database IDE for managing and querying databases with advanced SQL support" },
                 { "name": "React Storybook", "icon": "storybook.js.org", "usage": "Tool for building UI components and pages in isolation for development and testing" },
                 { "name": "AWS Glue", "icon": "aws.amazon.com", "usage": "Serverless data integration service for discovering, preparing, and combining data" },
-                { "name": "Amazon EFS", "icon": "aws.amazon.com", "usage": "Scalable file storage service for use with Amazon EC2 instances" },
                 { "name": "Amazon EventBridge", "icon": "aws.amazon.com", "usage": "Serverless event bus service for connecting applications using events" },
                 { "name": "SWR", "icon": "swr.vercel.app", "usage": "React hooks library for data fetching with caching, revalidation, and error handling" },
                 { "name": "Vercel", "icon": "vercel.com", "usage": "Cloud platform for static sites and serverless functions with Git integration and automatic deployments" },
@@ -79,6 +78,7 @@ const pageData = {
                 { "name": "Elasticsearch", "icon": "elastic.co", "usage": "Distributed search and analytics engine for full-text search and real-time analytics" },
                 { "name": "Snowflake", "icon": "snowflake.com", "usage": "Cloud-based data warehouse platform for scalable data storage, processing, and analytics" },
                 { "name": "Databricks", "icon": "databricks.com", "usage": "Unified analytics platform for big data processing, machine learning, and collaborative data science" },
+                { "name": "Amazon EFS", "icon": "aws.amazon.com", "usage": "Scalable file storage service for use with Amazon EC2 instances" },
             ]
         },
         "aaa_ai_agents_automation": {
@@ -89,6 +89,7 @@ const pageData = {
                 { "name": "n8n", "icon": "n8n.io", "usage": "Workflow automation tool for connecting apps and services with custom integrations" },
                 { "name": "Azure OpenAI", "icon": "openai.com", "usage": "AI research and deployment company providing advanced AI models and APIs" },
                 { "name": "LangChain", "icon": "langchain.com", "usage": "Framework for developing applications powered by language models" },
+                { "name": "Zapier", "icon": "zapier.com", "usage": "Automation platform for connecting apps and automating workflows without code" },
             ]
         },
         "utilities": {
