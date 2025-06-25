@@ -72,10 +72,11 @@ const pageData = {
         },
         "databases_data_warehouse_data_storage": {
             "tools": [
-                { "name": "MongoDB", "icon": "mongodb.com", "usage": "NoSQL document database designed for modern application development and cloud computing" },
                 { "name": "Amazon DynamoDB", "icon": "aws.amazon.com", "usage": "NoSQL database service for applications that need consistent, single-digit millisecond latency" },
-                { "name": "AWS Aurora PostgreSQL", "icon": "aws.amazon.com", "usage": "MySQL and PostgreSQL-compatible relational database built for the cloud" },
                 { "name": "Elasticsearch", "icon": "elastic.co", "usage": "Distributed search and analytics engine for full-text search and real-time analytics" },
+                { "name": "AWS Aurora PostgreSQL", "icon": "aws.amazon.com", "usage": "MySQL and PostgreSQL-compatible relational database built for the cloud" },
+                { "name": "AWS ValKey", "icon": "aws.amazon.com", "usage": "High-performance in-memory key-value data store compatible with Redis, designed for ultra-low latency and high throughput" },
+                { "name": "MongoDB", "icon": "mongodb.com", "usage": "NoSQL document database designed for modern application development and cloud computing" },
                 { "name": "Snowflake", "icon": "snowflake.com", "usage": "Cloud-based data warehouse platform for scalable data storage, processing, and analytics" },
                 { "name": "Databricks", "icon": "databricks.com", "usage": "Unified analytics platform for big data processing, machine learning, and collaborative data science" },
                 { "name": "Amazon EFS", "icon": "aws.amazon.com", "usage": "Scalable file storage service for use with Amazon EC2 instances" },
