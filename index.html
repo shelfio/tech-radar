@@ -10,7 +10,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -20,7 +20,7 @@
             justify-content: center;
             padding: 20px;
         }
-        
+
         .container {
             background: white;
             border-radius: 20px;
@@ -30,28 +30,28 @@
             max-width: 600px;
             width: 100%;
         }
-        
+
         h1 {
             font-size: 2.5rem;
             color: #333;
             margin-bottom: 20px;
             font-weight: 700;
         }
-        
+
         .subtitle {
             font-size: 1.1rem;
             color: #666;
             margin-bottom: 50px;
             line-height: 1.6;
         }
-        
+
         .navigation {
             display: flex;
             gap: 30px;
             justify-content: center;
             flex-wrap: wrap;
         }
-        
+
         .nav-card {
             background: #f8f9fa;
             border: 2px solid #e9ecef;
@@ -64,45 +64,45 @@
             flex: 1;
             max-width: 250px;
         }
-        
+
         .nav-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
             border-color: #667eea;
         }
-        
+
         .nav-icon {
             font-size: 3rem;
             margin-bottom: 15px;
             display: block;
         }
-        
+
         .nav-title {
             font-size: 1.4rem;
             font-weight: 600;
             margin-bottom: 10px;
         }
-        
+
         .nav-description {
             font-size: 0.9rem;
             color: #666;
             line-height: 1.4;
         }
-        
+
         @media (max-width: 768px) {
             .container {
                 padding: 40px 30px;
             }
-            
+
             h1 {
                 font-size: 2rem;
             }
-            
+
             .navigation {
                 flex-direction: column;
                 gap: 20px;
             }
-            
+
             .nav-card {
                 min-width: auto;
                 max-width: none;
@@ -111,29 +111,31 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome</h1>
-        <p class="subtitle">Choose where you'd like to navigate to explore our technology landscape</p>
-        
-        <div class="navigation">
-            <a href="tech-radar/" class="nav-card">
-                <span class="nav-icon">🎯</span>
-                <div class="nav-title">Tech Radar</div>
-                <div class="nav-description">Explore our technology adoption timeline and strategic decisions</div>
-            </a>
-            
-            <a href="tech-stack/" class="nav-card">
-                <span class="nav-icon">🔧</span>
-                <div class="nav-title">Tech Stack</div>
-                <div class="nav-description">Browse our comprehensive technology stack and tools</div>
-            </a>
-            
-            <a href="open-source/" class="nav-card">
-                <span class="nav-icon">⭐</span>
-                <div class="nav-title">Open Source</div>
-                <div class="nav-description">Discover our open source contributions and community projects</div>
-            </a>
-        </div>
+<div class="container">
+    <img src="https://static.shelf.io/images/logo/logo-black.svg" alt="Shelf"
+         style="height: 50px; margin-bottom: 20px; min-width: 200px">
+    <h1>Welcome</h1>
+    <p class="subtitle">Choose where you'd like to navigate to explore our technology landscape</p>
+
+    <div class="navigation">
+        <a href="tech-radar/" class="nav-card">
+            <span class="nav-icon">🎯</span>
+            <div class="nav-title">Tech Radar</div>
+            <div class="nav-description">Explore our technology adoption timeline and strategic decisions</div>
+        </a>
+
+        <a href="tech-stack/" class="nav-card">
+            <span class="nav-icon">🔧</span>
+            <div class="nav-title">Tech Stack</div>
+            <div class="nav-description">Browse our comprehensive technology stack and tools</div>
+        </a>
+
+        <a href="open-source/" class="nav-card">
+            <span class="nav-icon">⭐</span>
+            <div class="nav-title">Open Source</div>
+            <div class="nav-description">Discover our open source contributions and community projects</div>
+        </a>
     </div>
+</div>
 </body>
 </html>

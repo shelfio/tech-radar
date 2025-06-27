@@ -10,6 +10,35 @@ body {
     min-height: 100vh;
 }
 
+.navigation-header {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.navigation-header .back-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.navigation-header .back-link:hover {
+    background-color: #f7fafc;
+    color: #5a67d8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 .header {
     background: white;
     border-bottom: 1px solid #e2e8f0;
@@ -55,6 +84,12 @@ body {
 .header-text p {
     color: #718096;
     font-size: 14px;
+}
+
+.header-logo {
+    height: 40px;
+    margin-right: 20px;
+    min-width: 200px;
 }
 
 .main-container {
