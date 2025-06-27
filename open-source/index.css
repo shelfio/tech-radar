@@ -28,6 +28,24 @@ body {
     gap: 20px;
 }
 
+.back-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.back-link:hover {
+    background-color: #f7fafc;
+    color: #5a67d8;
+}
+
 .header-text h1 {
     font-size: 28px;
     color: #1a202c;
