@@ -10,88 +10,7 @@
 
     <link rel="stylesheet"
           href="https://rawcdn.githack.com/zalando/tech-radar/d6d4ead4ef349319357cedf3ba2939be2814bfa5/docs/radar.css">
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f8fafc;
-            margin: 0;
-        }
-        
-        .navigation-header {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            z-index: 1000;
-        }
-
-        .back-link {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 14px;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            padding: 8px 12px;
-            border-radius: 6px;
-            background: white;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            transition: all 0.2s ease;
-        }
-
-        .back-link:hover {
-            background-color: #f7fafc;
-            color: #5a67d8;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-        
-        .header {
-            background: white;
-            border-bottom: 1px solid #e2e8f0;
-            padding: 20px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        
-        .header-text h1 {
-            font-size: 28px;
-            color: #1a202c;
-            margin-bottom: 5px;
-        }
-        
-        .header-text p {
-            color: #718096;
-            font-size: 14px;
-        }
-        
-        .header-logo {
-            height: 40px;
-            margin-right: 20px;
-            min-width: 200px;
-        }
-        
-        #radar {
-            width: 100%;
-            height: auto;
-        }
-        
-        .content-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -122,7 +41,7 @@
             grid: "#bbb",
             inactive: "#ddd"
         },
-        title: "Shelf Tech Radar — 2024.10",
+        title: "Shelf Tech Radar — 2025.06",
         quadrants: [
             {name: "AI/ML"},
             {name: "Infrastructure"},
@@ -155,10 +74,17 @@
             },
             {
                 "quadrant": 0,
-                "ring": 2,
+                "ring": 0,
                 "label": "Claude Code",
                 "active": true,
-                "moved": 0
+                "moved": 1
+            },
+            {
+                "quadrant": 0,
+                "ring": 1,
+                "label": "MCP",
+                "active": true,
+                "moved": 1
             },
             {
                 "quadrant": 2,
@@ -268,7 +194,7 @@
             {
                 "quadrant": 1,
                 "ring": 0,
-                "label": "AWS SES",
+                "label": "CircleCI",
                 "active": true,
                 "moved": 0
             },
@@ -449,8 +375,29 @@
             },
             {
                 "quadrant": 1,
-                "ring": 0,
+                "ring": 3,
                 "label": "Yarn classic",
+                "active": true,
+                "moved": -1
+            },
+            {
+                "quadrant": 3,
+                "ring": 0,
+                "label": "pnpm",
+                "active": true,
+                "moved": 1
+            },
+            {
+                "quadrant": 2,
+                "ring": 1,
+                "label": "AWS ValKey",
+                "active": true,
+                "moved": 1
+            },
+            {
+                "quadrant": 2,
+                "ring": 3,
+                "label": "AWS Neptune",
                 "active": true,
                 "moved": -1
             }
