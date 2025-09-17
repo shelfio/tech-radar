@@ -9,8 +9,11 @@
     <title>Shelf Tech Stack</title>
     <script src="index.js"></script>
     <script>
-        function getFaviconUrl(domain) {
-            return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
+        function getFaviconUrl(iconValue) {
+            if (iconValue.startsWith('http://') || iconValue.startsWith('https://')) {
+                return iconValue;
+            }
+            return `https://www.google.com/s2/favicons?domain=${iconValue}&sz=128`;
         }
     </script>
 </head>
