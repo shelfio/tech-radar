@@ -74,19 +74,19 @@ export const pageData = {
         },
         {
           name: "Amazon S3",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Object storage service for data backup, archival, and analytics",
         },
         {
           name: "AWS Lambda",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Serverless computing service that runs code without provisioning or managing servers",
         },
         {
           name: "Amazon CloudFront",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Content delivery network (CDN) service for fast, secure content delivery",
         },
@@ -115,13 +115,13 @@ export const pageData = {
         },
         {
           name: "Amazon SQS",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Message queuing service for decoupling and scaling microservices",
         },
         {
           name: "Amazon VPC",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Virtual private cloud for launching AWS resources in a logically isolated virtual network",
         },
@@ -151,13 +151,13 @@ export const pageData = {
         },
         {
           name: "AWS Glue",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Serverless data integration service for discovering, preparing, and combining data",
         },
         {
           name: "Amazon EventBridge",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Serverless event bus service for connecting applications using events",
         },
@@ -185,7 +185,7 @@ export const pageData = {
       tools: [
         {
           name: "Amazon DynamoDB",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "NoSQL database service for applications that need consistent, single-digit millisecond latency",
         },
@@ -197,13 +197,13 @@ export const pageData = {
         },
         {
           name: "AWS Aurora PostgreSQL",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "MySQL and PostgreSQL-compatible relational database built for the cloud",
         },
         {
           name: "AWS ValKey",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "High-performance in-memory key-value data store compatible with Redis, designed for ultra-low latency and high throughput",
         },
@@ -227,7 +227,7 @@ export const pageData = {
         },
         {
           name: "Amazon EFS",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Scalable file storage service for use with Amazon EC2 instances",
         },
@@ -282,34 +282,34 @@ export const pageData = {
       tools: [
         {
           name: "Amazon Route 53",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage: "Scalable domain name system (DNS) web service",
         },
         {
           name: "Amazon SES",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage: "Email sending service for transactional and marketing emails",
         },
         {
           name: "Amazon SNS",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Notification service for sending messages to subscribers via multiple protocols",
         },
         {
           name: "Amazon API Gateway",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Managed service for creating, publishing, and managing APIs at scale",
         },
         {
           name: "Amazon Kinesis",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage: "Platform for real-time data streaming and analytics",
         },
         {
           name: "Amazon SageMaker",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Machine learning platform for building, training, and deploying ML models",
         },
@@ -344,19 +344,19 @@ export const pageData = {
         },
         {
           name: "OpenAPI Specification",
-          icon: "swagger.io",
+          icon: "https://cdn.brandfetch.io/idkndPduFy/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1757454850131",
           usage:
             "Specification for describing REST APIs with standardized documentation",
         },
         {
           name: "AWS Step Functions",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Serverless orchestration service for coordinating distributed applications",
         },
         {
           name: "Amazon Kinesis Firehose",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Data delivery service for loading streaming data into AWS data stores",
         },
@@ -380,7 +380,7 @@ export const pageData = {
         },
         {
           name: "Amazon QuickSight",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Business intelligence service for creating interactive dashboards and visualizations",
         },
@@ -440,7 +440,7 @@ export const pageData = {
         },
         {
           name: "pnpm",
-          icon: "pnpm.io",
+          icon: "https://cdn.brandfetch.io/idA03rMeg7/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1709852232671",
           usage:
             "Fast, disk space efficient package manager for JavaScript with strict dependency resolution",
         },
@@ -475,13 +475,13 @@ export const pageData = {
         },
         {
           name: "Elastic Load Balancing",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Service for distributing incoming application traffic across multiple targets",
         },
         {
           name: "Amazon CloudWatch",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Monitoring and observability service for AWS resources and applications",
         },
@@ -505,7 +505,7 @@ export const pageData = {
         },
         {
           name: "AWS CloudFormation",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Infrastructure as code service for modeling and provisioning AWS resources",
         },
@@ -523,7 +523,7 @@ export const pageData = {
         },
         {
           name: "AWS Fargate",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Serverless compute engine for containers without managing servers",
         },
@@ -534,7 +534,7 @@ export const pageData = {
         },
         {
           name: "Amazon ECR",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Container registry service for storing and managing Docker container images",
         },
@@ -584,7 +584,7 @@ export const pageData = {
       tools: [
         {
           name: "AWS IAM",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Identity and access management service for securely controlling access to AWS services",
         },
@@ -596,18 +596,18 @@ export const pageData = {
         },
         {
           name: "AWS Key Management Service",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage: "Managed service for creating and controlling encryption keys",
         },
         {
           name: "AWS WAF",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Web application firewall for protecting web applications from common exploits",
         },
         {
           name: "AWS Certificate Manager",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage: "Service for provisioning and managing SSL/TLS certificates",
         },
         {
@@ -618,13 +618,13 @@ export const pageData = {
         },
         {
           name: "Amazon GuardDuty",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Threat detection service for monitoring malicious activity and unauthorized behavior",
         },
         {
           name: "AWS CloudTrail",
-          icon: "aws.amazon.com",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Service for logging and monitoring API calls and user activity",
         },
@@ -669,7 +669,7 @@ export const pageData = {
         },
         {
           name: "Intercom",
-          icon: "intercom.com",
+          icon: "https://cdn.brandfetch.io/idYJNDWF1m/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1668070639176",
           usage:
             "Customer messaging platform for support, sales, and marketing automation",
         },
@@ -681,7 +681,7 @@ export const pageData = {
         },
         {
           name: "Zoom",
-          icon: "zoom.us",
+          icon: "https://cdn.brandfetch.io/id3aO4Szj3/w/140/h/139/theme/dark/symbol.png?c=1bxid64Mup7aczewSAYMX&t=1668070435617",
           usage:
             "Video conferencing and communication platform for remote meetings",
         },
@@ -735,7 +735,7 @@ export const pageData = {
         },
         {
           name: "Whimsical Wireframes",
-          icon: "whimsical.com",
+          icon: "https://cdn.brandfetch.io/idD-EtaX7Y/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1756475751377",
           usage:
             "Visual workspace for creating wireframes, flowcharts, and mind maps",
         },
