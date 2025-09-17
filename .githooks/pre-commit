@@ -1,0 +1,9 @@
+#!/bin/sh
+set -euo pipefail
+
+pnpm build
+
+git add index.html \
+  tech-radar/index.html \
+  tech-stack/index.html \
+  open-source/index.html

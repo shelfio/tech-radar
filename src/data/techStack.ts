@@ -1,48 +1,62 @@
-export const CATEGORIES = [
+export type TechStackTool = {
+  name: string;
+  icon: string;
+  usage: string;
+};
+
+export type TechStackCategory = {
+  id: string;
+  name: string;
+  icon: string;
+  description: string;
+  tools: TechStackTool[];
+};
+
+const baseCategories = [
   {
-    _id: "application_and_data",
+    id: "application_and_data",
     name: "Application and Data",
     icon: "🖥️",
     description:
       "Core infrastructure components including caching systems, application hosting platforms, and development frameworks that power our services.",
   },
   {
-    _id: "databases_data_warehouse_data_storage",
+    id: "databases_data_warehouse_data_storage",
     name: "Databases, Data Warehouse, Data Storage",
     icon: "🗄️",
     description:
       "Database systems, data warehouses, and data storage solutions for scalable, reliable data management and analytics.",
   },
   {
-    _id: "aaa_ai_agents_automation",
+    id: "aaa_ai_agents_automation",
     name: "AAA - AI, Agents, Automation",
     icon: "🤖",
     description:
       "Intelligent AI agents and assistants that enhance productivity and accelerate software development workflows.",
   },
   {
-    _id: "utilities",
+    id: "utilities",
     name: "Utilities",
     icon: "🔧",
     description:
       "Third-party services and specialized tools that enhance development capabilities and provide additional functionality.",
   },
   {
-    _id: "devops",
+    id: "devops",
     name: "DevOps",
     icon: "⚙️",
     description:
       "Development operations tools for building, testing, deploying, and monitoring applications.",
   },
   {
-    _id: "security_identity",
+    id: "security_identity",
     name: "Security & Identity",
     icon: "🔒",
     description:
       "Security, identity management, compliance, and threat detection tools for protecting applications and data.",
   },
   {
-    _id: "business_tools",
+    id: "business_tools",
     name: "Business Tools",
     icon: "💼",
     description:
@@ -50,7 +64,7 @@ export const CATEGORIES = [
   },
 ];
 
-export const pageData = {
+const techStackData = {
   techStack: {
     application_and_data: {
       tools: [
@@ -749,3 +763,18 @@ export const pageData = {
     },
   },
 };
+
+type TechStackRecord = typeof techStackData.techStack;
+
+export const techStackCategories: TechStackCategory[] = baseCategories.map(
+  (category) => {
+    const tools = techStackData.techStack[
+      category.id as keyof TechStackRecord
+    ]?.tools;
+
+    return {
+      ...category,
+      tools: Array.isArray(tools) ? [...tools] : [],
+    };
+  },
+);
