@@ -1,59 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://shelf.io/wp-content/uploads/2019/04/favicon.png">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-brand-DEFAULT: #6366f1;
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="https://shelf.io/wp-content/uploads/2019/04/favicon.png"
+    />
     <title>Shelf Open Source</title>
-</head>
-
-<body>
-    <div class="navigation-header">
-        <a href="../" class="back-link">← Back to Home</a>
+  </head>
+  <body class="min-h-screen bg-slate-50 font-sans text-slate-900">
+    <div class="fixed left-5 top-5 z-50">
+      <a
+        href="../"
+        class="inline-flex items-center gap-2 rounded-md bg-white px-3 py-2 text-sm font-semibold text-indigo-600 shadow-sm ring-1 ring-slate-200 motion-safe:transition motion-reduce:transform-none hover:-translate-y-0.5 hover:text-indigo-500 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40"
+      >
+        ← Back to Home
+      </a>
     </div>
-    <header class="header">
-        <div class="header-content">
-            <img src="../logo.svg" alt="Shelf" class="header-logo">
-            <div class="header-text">
-                <h1>Shelf Open Source</h1>
-                <p>Explore our open source contributions and community projects with star counts and details.</p>
-            </div>
+
+    <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center gap-4 px-6 py-6">
+        <img src="../logo.svg" alt="Shelf" class="h-10 w-auto" />
+        <div>
+          <h1 class="text-2xl font-semibold tracking-tight md:text-[1.75rem]">
+            Shelf Open Source
+          </h1>
+          <p class="mt-1 text-sm text-slate-600 md:text-base">
+            Explore our open source contributions and community projects with
+            live star and fork counts.
+          </p>
         </div>
+      </div>
     </header>
 
-    <div class="main-container">
-        <div class="loading" id="loading">
-            <div class="loading-spinner"></div>
-            <p>Loading repositories...</p>
-        </div>
+    <main class="mx-auto max-w-6xl px-6 pb-16 pt-10 md:pt-12">
+      <div
+        id="loading"
+        class="flex flex-col items-center justify-center gap-4 rounded-2xl border border-slate-200 bg-white px-6 py-12 text-center text-slate-500 shadow-sm"
+        style="display: flex"
+      >
+        <div
+          class="h-10 w-10 animate-spin rounded-full border-[3px] border-slate-200 border-t-brand"
+          aria-hidden="true"
+        ></div>
+        <p class="text-sm font-medium">Loading repositories...</p>
+      </div>
 
-        <div class="error" id="error" style="display: none;">
-            <p>Failed to load repositories. Please try again later.</p>
-        </div>
+      <div
+        id="error"
+        class="mt-8 rounded-2xl border border-rose-200 bg-white px-6 py-10 text-center text-rose-600 shadow-sm"
+        style="display: none"
+      >
+        <p class="text-sm font-semibold">
+          Failed to load repositories. Please try again later.
+        </p>
+      </div>
 
-        <div class="stats-bar" id="stats-bar" style="display: none;">
-            <div class="stat">
-                <div class="stat-number" id="total-repos">0</div>
-                <div class="stat-label">Repositories</div>
-            </div>
-            <div class="stat">
-                <div class="stat-number" id="total-stars">0</div>
-                <div class="stat-label">Total Stars</div>
-            </div>
-            <div class="stat">
-                <div class="stat-number" id="total-forks">0</div>
-                <div class="stat-label">Total Forks</div>
-            </div>
+      <div
+        id="stats-bar"
+        class="mt-12 flex flex-wrap gap-4"
+        style="display: none"
+      >
+        <div
+          class="flex min-w-[140px] flex-1 flex-col items-center rounded-2xl border border-slate-200 bg-white px-4 py-6 text-center shadow-sm"
+        >
+          <div class="text-2xl font-semibold tracking-tight" id="total-repos">
+            0
+          </div>
+          <div
+            class="text-[0.7rem] font-medium uppercase tracking-[0.2em] text-slate-500"
+          >
+            Repositories
+          </div>
         </div>
+        <div
+          class="flex min-w-[140px] flex-1 flex-col items-center rounded-2xl border border-slate-200 bg-white px-4 py-6 text-center shadow-sm"
+        >
+          <div class="text-2xl font-semibold tracking-tight" id="total-stars">
+            0
+          </div>
+          <div
+            class="text-[0.7rem] font-medium uppercase tracking-[0.2em] text-slate-500"
+          >
+            Total Stars
+          </div>
+        </div>
+        <div
+          class="flex min-w-[140px] flex-1 flex-col items-center rounded-2xl border border-slate-200 bg-white px-4 py-6 text-center shadow-sm"
+        >
+          <div class="text-2xl font-semibold tracking-tight" id="total-forks">
+            0
+          </div>
+          <div
+            class="text-[0.7rem] font-medium uppercase tracking-[0.2em] text-slate-500"
+          >
+            Total Forks
+          </div>
+        </div>
+      </div>
 
-        <div class="repositories-grid" id="repositories-grid">
-            <!-- Repositories will be rendered here -->
-        </div>
-    </div>
+      <div
+        id="repositories-grid"
+        class="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3"
+      ></div>
+    </main>
 
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
