@@ -1,4 +1,4 @@
-const CATEGORIES = [
+export const CATEGORIES = [
   {
     _id: "application_and_data",
     name: "Application and Data",
@@ -50,7 +50,7 @@ const CATEGORIES = [
   },
 ];
 
-const pageData = {
+export const pageData = {
   techStack: {
     application_and_data: {
       tools: [
