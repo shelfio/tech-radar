@@ -1,4 +1,5 @@
 import Document from "@/components/Document";
+import PageHeader from "@/components/PageHeader";
 
 export function renderTechRadarPage() {
   return (
@@ -21,19 +22,12 @@ export function renderTechRadarPage() {
         </a>
       </div>
 
-      <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center gap-4 px-6 py-6">
-          <img src="../logo.svg" alt="Shelf" className="h-10 w-auto" />
-          <div>
-            <h1 className="text-2xl font-semibold tracking-tight md:text-[1.75rem]">
-              Shelf Tech Radar
-            </h1>
-            <p className="mt-1 text-sm text-slate-600 md:text-base">
-              Explore our technology adoption timeline and strategic decisions across different categories.
-            </p>
-          </div>
-        </div>
-      </header>
+      <PageHeader
+        logoSrc="../logo.svg"
+        containerClassName="max-w-7xl px-6"
+        title="Shelf Tech Radar"
+        description="Explore our technology adoption timeline and strategic decisions across different categories."
+      />
 
       <main className="space-y-14 pb-20 pt-10 md:pt-12">
         <div className="px-6">

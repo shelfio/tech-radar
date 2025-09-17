@@ -1,4 +1,5 @@
 import Document from "@/components/Document";
+import PageHeader from "@/components/PageHeader";
 import { techStackCategories } from "@/data/techStack";
 
 const PLUS_PATH = "M8 4h2v4h4v2h-4v4H8v-4H4V8h4z";
@@ -30,18 +31,12 @@ export function renderTechStackPage() {
           ← Back to Home
         </a>
       </div>
-
-      <header className="sticky top-0 z-50 border-b border-white/40 bg-white/70 py-4 backdrop-blur">
-        <div className="mx-auto flex max-w-5xl items-center gap-4 px-4">
-          <img src="../logo.svg" alt="Shelf" className="h-10 min-w-[100px]" />
-          <div className="space-y-1">
-            <h1 className="text-3xl font-semibold text-slate-900">Shelf Tech Stack</h1>
-            <p className="text-sm text-slate-500">
-              Discover the tools and technologies used to build Shelf&apos;s innovative products and services.
-            </p>
-          </div>
-        </div>
-      </header>
+      <PageHeader
+        logoSrc="../logo.svg"
+        containerClassName="max-w-5xl px-4"
+        title="Shelf Tech Stack"
+        description="Discover the tools and technologies used to build Shelf's innovative products and services."
+      />
 
       <main className="mx-auto max-w-5xl space-y-6 px-2 pt-8 sm:px-4 sm:pt-10">
         {techStackCategories.map((category) => (

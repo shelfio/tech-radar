@@ -1,4 +1,5 @@
 import Document from "@/components/Document";
+import PageHeader from "@/components/PageHeader";
 
 const cards = [
   {
@@ -86,18 +87,21 @@ export function renderHomePage() {
       title="Shelf Tech Radar & Tech Stack"
       bodyClassName="min-h-screen bg-gradient-to-tr from-rose-200 via-violet-200 to-sky-200 font-sans text-slate-900"
     >
-      <div className="mx-auto max-w-5xl px-6 py-16 md:py-20">
-        <header className="flex items-center justify-between py-6">
-          <img src="logo.svg" alt="Shelf" className="h-10 w-auto" />
+      <PageHeader
+        logoSrc="logo.svg"
+        containerClassName="max-w-5xl px-6"
+        rightSlot={
           <a
             href="https://shelf.io/careers/"
             className="text-sm font-semibold text-slate-600 transition hover:text-slate-900"
           >
             Careers
           </a>
-        </header>
+        }
+      />
 
-        <div className="mt-10 md:mt-12">
+      <div className="mx-auto max-w-5xl px-6 pb-16 pt-12 md:pb-20 md:pt-16">
+        <div className="md:mt-4">
           <h1 className="text-4xl font-semibold tracking-tight text-balance md:text-5xl">
             Explore our technology landscape
           </h1>

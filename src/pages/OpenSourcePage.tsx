@@ -1,4 +1,5 @@
 import Document from "@/components/Document";
+import PageHeader from "@/components/PageHeader";
 
 export function renderOpenSourcePage() {
   return (
@@ -16,19 +17,12 @@ export function renderOpenSourcePage() {
         </a>
       </div>
 
-      <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center gap-4 px-6 py-6">
-          <img src="../logo.svg" alt="Shelf" className="h-10 w-auto" />
-          <div>
-            <h1 className="text-2xl font-semibold tracking-tight md:text-[1.75rem]">
-              Shelf Open Source
-            </h1>
-            <p className="mt-1 text-sm text-slate-600 md:text-base">
-              Explore our open source contributions and community projects with live star and fork counts.
-            </p>
-          </div>
-        </div>
-      </header>
+      <PageHeader
+        logoSrc="../logo.svg"
+        containerClassName="max-w-6xl px-6"
+        title="Shelf Open Source"
+        description="Explore our open source contributions and community projects with live star and fork counts."
+      />
 
       <main className="mx-auto max-w-6xl px-6 pb-16 pt-10 md:pt-12">
         <div
