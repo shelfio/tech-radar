@@ -227,7 +227,7 @@
         const src = getFaviconUrl(tool.icon, iconState.retry ?? 0, iconState.cacheBust);
 
         return html`
-          <article class="group relative z-30 flex cursor-pointer items-center gap-3 rounded-xl bg-white/95 px-3 py-2 shadow-sm ring-1 ring-transparent transition duration-200 hover:z-40 hover:-translate-y-0.5 hover:shadow-lg hover:ring-indigo-100/60">
+          <article class="tool-card group relative z-30 flex cursor-pointer items-center gap-3 rounded-xl bg-white/95 px-3 py-2 ring-1 ring-transparent transition-[transform,box-shadow,filter] duration-150 ease-out hover:z-40 hover:ring-indigo-100/60 active:ring-indigo-200/60">
             <span class="relative flex h-14 w-14 items-center justify-center rounded-lg text-slate-600">
               <span class=${`icon-placeholder absolute inset-0${placeholderHidden ? " hidden" : ""}`}></span>
               <img
