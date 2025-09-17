@@ -645,7 +645,7 @@ export const pageData = {
       tools: [
         {
           name: "Slack",
-          icon: "slack.com",
+          icon: "https://cdn.brandfetch.io/idJ_HhtG0Z/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1745381282564",
           usage:
             "Team collaboration platform for messaging, file sharing, and workflow integration",
         },
@@ -675,7 +675,7 @@ export const pageData = {
         },
         {
           name: "Figma",
-          icon: "figma.com",
+          icon: "https://cdn.brandfetch.io/idZHcZ_i7F/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1729268241679",
           usage:
             "Collaborative design tool for creating user interfaces and prototypes",
         },
@@ -705,7 +705,7 @@ export const pageData = {
         },
         {
           name: "Salesforce",
-          icon: "salesforce.com",
+          icon: "https://cdn.brandfetch.io/idVE84WdIN/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1668516062674",
           usage:
             "Customer relationship management (CRM) platform for sales and marketing",
         },
