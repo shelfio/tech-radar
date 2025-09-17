@@ -1,148 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://shelf.io/wp-content/uploads/2019/04/favicon.png">
-
-    <title>Shelf Tech Radar & Tech Stack</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #FF8750 0%, #FF6E5A 25%, #8C91FF 50%, #4ABEF0 75%, #FF8750 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .container {
-            background: white;
-            border-radius: 20px;
-            padding: 60px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            max-width: 600px;
-            width: 100%;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            color: #333;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        .subtitle {
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 50px;
-            line-height: 1.6;
-        }
-
-        .navigation {
-            display: flex;
-            gap: 30px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .nav-card {
-            background: #f8f9fa;
-            border: 2px solid #e9ecef;
-            border-radius: 15px;
-            padding: 40px 30px;
-            text-decoration: none;
-            color: #333;
-            transition: all 0.3s ease;
-            min-width: 200px;
-            flex: 1;
-            max-width: 250px;
-        }
-
-        .nav-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-            border-color: #667eea;
-        }
-
-        .nav-icon {
-            font-size: 3rem;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .nav-title {
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .nav-description {
-            font-size: 0.9rem;
-            color: #666;
-            line-height: 1.4;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 40px 30px;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            .navigation {
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            .nav-card {
-                min-width: auto;
-                max-width: none;
-            }
-
-            .logo {
-                height: 50px;
-                min-width: 100px;
-                margin: 20px;
-            }
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-brand-DEFAULT: #6366f1;
+      }
     </style>
-</head>
-<body>
-<div class="container">
-    <img src="logo.svg" alt="Shelf" class="logo"/>
-    <h1>Welcome</h1>
-    <p class="subtitle">Choose where you'd like to navigate to explore our technology landscape</p>
+    <link
+      rel="shortcut icon"
+      href="https://shelf.io/wp-content/uploads/2019/04/favicon.png"
+    />
+    <title>Shelf Tech Radar & Tech Stack</title>
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-tr from-rose-200 via-violet-200 to-sky-200 font-sans text-slate-900"
+  >
+    <div class="mx-auto max-w-5xl px-6 py-16 md:py-20">
+      <header class="flex items-center justify-between py-6">
+        <img src="logo.svg" alt="Shelf" class="h-10 w-auto" />
+        <a
+          href="https://shelf.io/careers/"
+          class="text-sm font-semibold text-slate-600 transition hover:text-slate-900"
+        >
+          Careers
+        </a>
+      </header>
 
-    <div class="navigation">
-        <a href="tech-radar/" class="nav-card">
-            <span class="nav-icon">🎯</span>
-            <div class="nav-title">Tech Radar</div>
-            <div class="nav-description">Explore our technology adoption timeline and strategic decisions</div>
+      <div class="mt-10 md:mt-12">
+        <h1
+          class="text-4xl font-semibold tracking-tight text-balance md:text-5xl"
+        >
+          Explore our technology landscape
+        </h1>
+        <p class="mt-2 text-slate-600">
+          Navigate our tech radar, dive into the stack powering our products, or
+          see how we contribute back to the community.
+        </p>
+      </div>
+
+      <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <a
+          href="tech-radar/"
+          class="flex aspect-[4/3] flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white p-6 text-center text-slate-900 motion-safe:transition motion-reduce:transform-none hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40"
+        >
+          <svg
+            class="mx-auto size-14 md:size-16 text-indigo-500"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="12" r="9" opacity="0.25" />
+            <path d="M12 3v3" />
+            <path d="M21 12h-3" />
+            <path d="M12 21v-3" />
+            <path d="M9 12a3 3 0 0 1 3-3" />
+            <path d="m12 12 4 4" />
+          </svg>
+          <div class="mt-3 text-base font-semibold line-clamp-2">
+            Tech Radar
+          </div>
+          <div class="mt-1 text-sm text-slate-600">
+            Track how we adopt, trial, assess, and retire technologies.
+          </div>
         </a>
 
-        <a href="tech-stack/" class="nav-card">
-            <span class="nav-icon">🔧</span>
-            <div class="nav-title">Tech Stack</div>
-            <div class="nav-description">Browse our comprehensive technology stack and tools</div>
+        <a
+          href="tech-stack/"
+          class="flex aspect-[4/3] flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white p-6 text-center text-slate-900 motion-safe:transition motion-reduce:transform-none hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40"
+        >
+          <svg
+            class="mx-auto size-14 md:size-16 text-sky-500"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="3" y="4" width="18" height="6" rx="2" opacity="0.25" />
+            <rect x="3" y="14" width="18" height="6" rx="2" opacity="0.25" />
+            <path d="M7 7h.01" />
+            <path d="M11 7h.01" />
+            <path d="M15 7h.01" />
+            <path d="M7 17h.01" />
+            <path d="M11 17h.01" />
+            <path d="M15 17h.01" />
+          </svg>
+          <div class="mt-3 text-base font-semibold line-clamp-2">
+            Tech Stack
+          </div>
+          <div class="mt-1 text-sm text-slate-600">
+            See the frameworks, services, and tooling that ship our products.
+          </div>
         </a>
 
-        <a href="open-source/" class="nav-card">
-            <span class="nav-icon">⭐</span>
-            <div class="nav-title">Open Source</div>
-            <div class="nav-description">Discover our open source contributions and community projects</div>
+        <a
+          href="open-source/"
+          class="flex aspect-[4/3] flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white p-6 text-center text-slate-900 motion-safe:transition motion-reduce:transform-none hover:-translate-y-0.5 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40"
+        >
+          <svg
+            class="mx-auto size-14 md:size-16 text-amber-500"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path
+              opacity="0.25"
+              d="M11.48 3.499a1.125 1.125 0 0 1 1.04 0l6.875 3.654a1.125 1.125 0 0 1 .605.994v7.706c0 .41-.224.788-.586.99l-6.875 3.9a1.125 1.125 0 0 1-1.069 0l-6.875-3.9a1.125 1.125 0 0 1-.586-.99V8.147c0-.412.23-.79.605-.994l6.875-3.654Z"
+            />
+            <path d="M12 7v10" />
+            <path d="M7 9.5 12 12l5-2.5" />
+          </svg>
+          <div class="mt-3 text-base font-semibold line-clamp-2">
+            Open Source
+          </div>
+          <div class="mt-1 text-sm text-slate-600">
+            Discover how we collaborate with and support the open source world.
+          </div>
         </a>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
