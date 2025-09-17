@@ -163,7 +163,7 @@ const pageData = {
                 { "name": "Amazon GuardDuty", "icon": "aws.amazon.com", "usage": "Threat detection service for monitoring malicious activity and unauthorized behavior" },
                 { "name": "AWS CloudTrail", "icon": "aws.amazon.com", "usage": "Service for logging and monitoring API calls and user activity" },
                 { "name": "Renovate Bot", "icon": "https://cdn.brandfetch.io/id9DgV_SAW/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1755028743130", "usage": "Automated dependency update service keeping libraries current and reducing supply-chain risk" },
-                { "name": "1Password", "icon": "1password.com", "usage": "Password manager for securing and managing login credentials" }
+                { "name": "1Password", "icon": "https://cdn.brandfetch.io/ids0xxqhX-/theme/light/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1668082116841", "usage": "Password manager for securing and managing login credentials" }
             ]
         },
         "business_tools": {
