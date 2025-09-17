@@ -84,11 +84,11 @@ const pageData = {
         },
         "aaa_ai_agents_automation": {
             "tools": [
+                { "name": "OpenAI Codex", "icon": "https://cdn.brandfetch.io/idR3duQxYl/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1749527471692", "usage": "AI code generation model powering developer tools and automation" },
                 { "name": "Claude Code", "icon": "claude.ai", "usage": "AI coding assistant for writing, debugging, and refactoring code with advanced reasoning capabilities" },
                 { "name": "GitHub Copilot", "icon": "github.com", "usage": "AI pair programmer that suggests code and entire functions" },
                 { "name": "TypingMind", "icon": "typingmind.com", "usage": "AI company workspace with custom agents, plugins, and unified chat interface for all major LLMs" },
                 { "name": "n8n", "icon": "n8n.io", "usage": "Workflow automation tool for connecting apps and services with custom integrations" },
-                { "name": "Azure OpenAI", "icon": "openai.com", "usage": "AI research and deployment company providing advanced AI models and APIs" },
                 { "name": "LangChain", "icon": "langchain.com", "usage": "Framework for developing applications powered by language models" },
                 { "name": "Zapier", "icon": "zapier.com", "usage": "Automation platform for connecting apps and automating workflows without code" },
             ]
@@ -102,7 +102,7 @@ const pageData = {
                 { "name": "Amazon Kinesis", "icon": "aws.amazon.com", "usage": "Platform for real-time data streaming and analytics" },
                 { "name": "Amazon SageMaker", "icon": "aws.amazon.com", "usage": "Machine learning platform for building, training, and deploying ML models" },
                 { "name": "Stripe", "icon": "stripe.com", "usage": "Payment processing platform for online businesses" },
-                { "name": "Mixpanel", "icon": "mixpanel.com", "usage": "Product analytics platform for tracking user interactions and behavior" },
+                { "name": "Mixpanel", "icon": "https://cdn.brandfetch.io/idr_rhI2FS/theme/dark/idMJ8uODLv.svg?c=1bxid64Mup7aczewSAYMX&t=1717143401811", "usage": "Product analytics platform for tracking user interactions and behavior" },
                 { "name": "Hotjar", "icon": "hotjar.com", "usage": "User behavior analytics platform for understanding how users interact with websites through heatmaps and recordings" },
                 { "name": "PyTorch", "icon": "pytorch.org", "usage": "Open source machine learning library for Python based on Torch" },
                 { "name": "Streamlit", "icon": "streamlit.io", "usage": "Open-source framework for creating data science and machine learning web apps" },
@@ -129,6 +129,7 @@ const pageData = {
                 { "name": "pnpm", "icon": "pnpm.io", "usage": "Fast, disk space efficient package manager for JavaScript with strict dependency resolution" },
                 { "name": "Kibana", "icon": "elastic.co", "usage": "Data visualization and exploration tool for Elasticsearch" },
                 { "name": "Terraform", "icon": "terraform.io", "usage": "Infrastructure as code tool for building, changing, and versioning infrastructure" },
+                { "name": "Spacelift", "icon": "https://cdn.brandfetch.io/idqUcBlHVz/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1746407670171", "usage": "Continuous delivery platform managing OpenTofu infrastructure pipelines" },
                 { "name": "WebStorm", "icon": "jetbrains.com", "usage": "Integrated development environment for JavaScript and web development" },
                 { "name": "CircleCI", "icon": "circleci.com", "usage": "Continuous integration and delivery platform for automating development workflows" },
                 { "name": "Elastic Load Balancing", "icon": "aws.amazon.com", "usage": "Service for distributing incoming application traffic across multiple targets" },
@@ -161,6 +162,7 @@ const pageData = {
                 { "name": "Whistic", "icon": "whistic.com", "usage": "Security and compliance platform for managing vendor risk assessments and security questionnaires" },
                 { "name": "Amazon GuardDuty", "icon": "aws.amazon.com", "usage": "Threat detection service for monitoring malicious activity and unauthorized behavior" },
                 { "name": "AWS CloudTrail", "icon": "aws.amazon.com", "usage": "Service for logging and monitoring API calls and user activity" },
+                { "name": "Renovate Bot", "icon": "https://cdn.brandfetch.io/id9DgV_SAW/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1755028743130", "usage": "Automated dependency update service keeping libraries current and reducing supply-chain risk" },
                 { "name": "1Password", "icon": "1password.com", "usage": "Password manager for securing and managing login credentials" }
             ]
         },
