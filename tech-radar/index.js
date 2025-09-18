@@ -691,6 +691,7 @@
     { quadrant: 3, ring: 3, label: 'lodash', active: true, moved: -1 },
     { quadrant: 1, ring: 3, label: 'Yarn classic', active: true, moved: -1 },
     { quadrant: 3, ring: 0, label: 'pnpm', active: true, moved: 1 },
+    { quadrant: 3, ring: 3, label: 'Sketch', active: true, moved: -1 },
     { quadrant: 2, ring: 1, label: 'AWS ValKey', active: true, moved: 1 },
     { quadrant: 2, ring: 3, label: 'AWS Neptune', active: true, moved: -1 },
   ]);

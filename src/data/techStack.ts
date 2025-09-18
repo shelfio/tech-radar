@@ -250,6 +250,12 @@ const techStackData = {
     aaa_ai_agents_automation: {
       tools: [
         {
+          name: "MCP",
+          icon: "https://mintcdn.com/mcp/4ZXF1PrDkEaJvXpn/mcp.png?w=1650&fit=max&auto=format&n=4ZXF1PrDkEaJvXpn&q=85&s=777d825ac0e80aaa4e2bddfc7e55e629",
+          usage:
+            "We build our in-house MCP servers for AI automation",
+        },
+        {
           name: "OpenAI Codex",
           icon: "https://cdn.brandfetch.io/idR3duQxYl/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1749527471692",
           usage:
@@ -704,12 +710,6 @@ const techStackData = {
           icon: "meet.google.com",
           usage:
             "Video conferencing service integrated with Google Workspace for virtual meetings",
-        },
-        {
-          name: "Sketch",
-          icon: "sketch.com",
-          usage:
-            "Digital design toolkit for creating user interfaces and visual designs",
         },
         {
           name: "Zeplin",

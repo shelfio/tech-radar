@@ -38,7 +38,7 @@ export function renderTechStackPage() {
         description="Discover the tools and technologies used to build Shelf's innovative products and services."
       />
 
-      <main className="mx-auto max-w-5xl space-y-6 px-2 pt-8 sm:px-4 sm:pt-10">
+      <main className="mx-auto max-w-5xl space-y-6 px-2 pb-10 pt-8 sm:px-4 sm:pt-10">
         {techStackCategories.map((category) => (
           <details
             key={category.id}
@@ -77,7 +77,7 @@ export function renderTechStackPage() {
               </span>
             </summary>
 
-            <div className="space-y-3 border-t border-slate-200 bg-white px-6 pb-12 pt-4">
+            <div className="space-y-3 rounded-b-3xl border-t border-slate-200 bg-white px-6 pb-12 pt-4">
               <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-3 lg:grid-cols-3">
                 {category.tools.map((tool) => {
                   const iconUrl = getIconUrl(tool.icon);
