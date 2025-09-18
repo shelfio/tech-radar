@@ -77,7 +77,7 @@ const techStackData = {
       tools: [
         {
           name: "React",
-          icon: "react.dev",
+          icon: "https://cdn.brandfetch.io/idREYlLkpD/theme/dark/id-H4pLvmU.svg?c=1bxid64Mup7aczewSAYMX&t=1746616569173",
           usage:
             "JavaScript library for building user interfaces with component-based architecture",
         },
@@ -113,7 +113,7 @@ const techStackData = {
         },
         {
           name: "Next.js",
-          icon: "nextjs.org",
+          icon: "https://cdn.brandfetch.io/id2alue-rx/theme/dark/idqNI71Hra.svg?c=1bxid64Mup7aczewSAYMX&t=1714556221292",
           usage:
             "React framework for production with features like server-side rendering and static site generation",
         },
@@ -148,7 +148,7 @@ const techStackData = {
         },
         {
           name: "Serverless",
-          icon: "serverless.com",
+          icon: "https://cdn.brandfetch.io/idW6B9qERs/w/400/h/400/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1754643438513",
           usage:
             "Framework for building applications with serverless architectures on AWS Lambda",
         },
@@ -157,12 +157,6 @@ const techStackData = {
           icon: "highcharts.com",
           usage:
             "JavaScript charting library for adding interactive charts to web applications",
-        },
-        {
-          name: "DataGrip",
-          icon: "jetbrains.com",
-          usage:
-            "Database IDE for managing and querying databases with advanced SQL support",
         },
         {
           name: "React Storybook",
@@ -199,6 +193,12 @@ const techStackData = {
           icon: "radix-ui.com",
           usage:
             "Low-level UI primitives and components for building high-quality design systems and web apps",
+        },
+        {
+          name: "React Flow",
+          icon: "https://rawcdn.githack.com/xyflow/web/bbc4b87545b1b2f580de2302f4734f6a13ab2a27/sites/xyflow.com/public/img/logo.svg?plain=1",
+          usage:
+            "Highly customizable React library for building interactive node-based graphs and diagrams",
         },
       ],
     },
@@ -251,6 +251,18 @@ const techStackData = {
           icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
             "Scalable file storage service for use with Amazon EC2 instances",
+        },
+        {
+          name: "DataGrip",
+          icon: "jetbrains.com",
+          usage:
+            "Database IDE for managing and querying databases with advanced SQL support",
+        },
+        {
+          name: "Studio 3T",
+          icon: "studio3t.com",
+          usage:
+            "Professional GUI and IDE for MongoDB with advanced query and aggregation tools",
         },
       ],
     },
@@ -327,7 +339,7 @@ const techStackData = {
         {
           name: "npm",
           icon: "npmjs.com",
-          usage: "Package manager for JavaScript and Node.js applications",
+          usage: "Package registry for hosting and distributing JavaScript packages",
         },
         {
           name: "ESLint",
@@ -505,19 +517,13 @@ const techStackData = {
           usage: "Integrated development environment for Python development",
         },
         {
-          name: "Yarn",
-          icon: "yarnpkg.com",
-          usage:
-            "Fast, reliable, and secure dependency management for JavaScript",
-        },
-        {
           name: "Kibana",
           icon: "elastic.co",
           usage: "Data visualization and exploration tool for Elasticsearch",
         },
         {
-          name: "Terraform",
-          icon: "terraform.io",
+          name: "OpenTofu",
+          icon: "https://cdn.brandfetch.io/idNaHywAkW/w/150/h/150/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1755662372805",
           usage:
             "Infrastructure as code tool for building, changing, and versioning infrastructure",
         },
@@ -610,12 +616,6 @@ const techStackData = {
             "Secure tunneling service for exposing local servers to the internet",
         },
         {
-          name: "Studio 3T",
-          icon: "studio3t.com",
-          usage:
-            "Professional GUI and IDE for MongoDB with advanced query and aggregation tools",
-        },
-        {
           name: "OpsLevel",
           icon: "opslevel.com",
           usage:
@@ -681,6 +681,11 @@ const techStackData = {
           name: "1Password",
           icon: "https://cdn.brandfetch.io/ids0xxqhX-/theme/light/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1668082116841",
           usage: "Password manager for securing and managing login credentials",
+        },
+        {
+          name: "Drata",
+          icon: "https://cdn.brandfetch.io/idQSKHq3LU/w/512/h/512/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1740214977722",
+          usage: "Automated compliance platform for achieving and maintaining SOC 2, ISO 27001, HIPAA, and other security standards",
         },
       ],
     },
