@@ -42,6 +42,20 @@ const baseCategories = [
       "Third-party services and specialized tools that enhance development capabilities and provide additional functionality.",
   },
   {
+    id: "cloud_platforms",
+    name: "Cloud Platforms",
+    icon: "☁️",
+    description:
+      "Cloud infrastructure providers and platforms for hosting, deployment, and managed services.",
+  },
+  {
+    id: "programming_languages",
+    name: "Programming Languages",
+    icon: "💻",
+    description:
+      "Core programming languages used across our backend, frontend, and infrastructure development.",
+  },
+  {
     id: "development_workflow",
     name: "Development Workflow",
     icon: "🛠️",
@@ -73,6 +87,61 @@ const baseCategories = [
 
 const techStackData = {
   techStack: {
+    cloud_platforms: {
+      tools: [
+        {
+          name: "AWS",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
+          usage:
+            "Amazon Web Services - comprehensive cloud platform providing compute, storage, database, and 200+ other services",
+        },
+        {
+          name: "Microsoft Azure",
+          icon: "azure.microsoft.com",
+          usage: "Cloud computing platform and infrastructure service",
+        },
+        {
+          name: "Vercel",
+          icon: "vercel.com",
+          usage:
+            "Cloud platform for static sites and serverless functions with Git integration and automatic deployments",
+        },
+        {
+          name: "Elastic Cloud",
+          icon: "https://cdn.brandfetch.io/idRKAFOKVG/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1668070923110",
+          usage:
+            "Managed Elasticsearch service for search, observability, and security solutions in the cloud",
+        },
+        {
+          name: "MongoDB Atlas",
+          icon: "https://cdn.brandfetch.io/ideyyfT0Lp/idolyTWJJO.svg?c=1bxid64Mup7aczewSAYMX&t=1671109859704",
+          usage:
+            "Fully managed cloud database service for MongoDB with automated scaling, backups, and global distribution",
+        },
+      ],
+    },
+    programming_languages: {
+      tools: [
+        {
+          name: "TypeScript",
+          icon: "typescriptlang.org",
+          usage:
+            "Strongly typed programming language that builds on JavaScript with static type definitions",
+        },
+        {
+          name: "Python",
+          icon: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+          usage:
+            "High-level programming language for backend services, data science, and automation",
+        },
+        {
+          name: "HCL",
+          icon: "https://avatars.githubusercontent.com/u/761456?s=256&v=4",
+          usage:
+            "HashiCorp Configuration Language for defining infrastructure as code in Terraform and OpenTofu",
+        },
+      ],
+    },
     application_and_data: {
       tools: [
         {
@@ -83,15 +152,9 @@ const techStackData = {
         },
         {
           name: "Node.js",
-          icon: "nodejs.org",
+          icon: "https://cdn.brandfetch.io/id7JRtQEAa/w/400/h/400/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1756481464226",
           usage:
             "JavaScript runtime built on Chrome's V8 JavaScript engine for server-side development",
-        },
-        {
-          name: "TypeScript",
-          icon: "typescriptlang.org",
-          usage:
-            "Strongly typed programming language that builds on JavaScript with static type definitions",
         },
         {
           name: "Amazon S3",
@@ -128,11 +191,6 @@ const techStackData = {
           icon: "styled-components.com",
           usage:
             "CSS-in-JS library for styling React components with tagged template literals and theming support",
-        },
-        {
-          name: "Microsoft Azure",
-          icon: "azure.microsoft.com",
-          usage: "Cloud computing platform and infrastructure service",
         },
         {
           name: "Amazon SQS",
@@ -181,12 +239,6 @@ const techStackData = {
           icon: "swr.vercel.app",
           usage:
             "React hooks library for data fetching with caching, revalidation, and error handling",
-        },
-        {
-          name: "Vercel",
-          icon: "vercel.com",
-          usage:
-            "Cloud platform for static sites and serverless functions with Git integration and automatic deployments",
         },
         {
           name: "Radix UI",
@@ -320,6 +372,24 @@ const techStackData = {
           icon: "scriptkit.com",
           usage:
             "Tool for creating and running scripts with a simple interface for automating tasks and workflows",
+        },
+        {
+          name: "AWS Bedrock",
+          icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
+          usage:
+            "Fully managed service for building generative AI applications with foundation models from leading AI companies",
+        },
+        {
+          name: "OpenAI Agents SDK",
+          icon: "https://cdn.brandfetch.io/idR3duQxYl/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1749527471692",
+          usage:
+            "SDK for building autonomous AI agents with tool calling, structured outputs, and multi-step reasoning capabilities",
+        },
+        {
+          name: "AI SDK",
+          icon: "vercel.com",
+          usage:
+            "TypeScript toolkit by Vercel for building AI-powered streaming text and chat UIs with React, Next.js, and other frameworks",
         },
       ],
     },
