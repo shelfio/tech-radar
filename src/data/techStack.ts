@@ -42,6 +42,13 @@ const baseCategories = [
       "Third-party services and specialized tools that enhance development capabilities and provide additional functionality.",
   },
   {
+    id: "development_workflow",
+    name: "Development Workflow",
+    icon: "🛠️",
+    description:
+      "Essential tools for code quality, package management, and version control that streamline daily development.",
+  },
+  {
     id: "devops",
     name: "DevOps",
     icon: "⚙️",
@@ -296,6 +303,67 @@ const techStackData = {
           usage:
             "Automation platform for connecting apps and automating workflows without code",
         },
+        {
+          name: "Script Kit",
+          icon: "scriptkit.com",
+          usage:
+            "Tool for creating and running scripts with a simple interface for automating tasks and workflows",
+        },
+      ],
+    },
+    development_workflow: {
+      tools: [
+        {
+          name: "Git",
+          icon: "git-scm.com",
+          usage: "Distributed version control system for tracking code changes",
+        },
+        {
+          name: "pnpm",
+          icon: "https://cdn.brandfetch.io/idA03rMeg7/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1709852232671",
+          usage:
+            "Fast, disk space efficient package manager for JavaScript with strict dependency resolution",
+        },
+        {
+          name: "npm",
+          icon: "npmjs.com",
+          usage: "Package manager for JavaScript and Node.js applications",
+        },
+        {
+          name: "ESLint",
+          icon: "eslint.org",
+          usage:
+            "JavaScript linting tool for identifying and fixing code quality issues",
+        },
+        {
+          name: "Prettier",
+          icon: "prettier.io",
+          usage:
+            "Code formatter for maintaining consistent code style across teams",
+        },
+        {
+          name: "uv",
+          icon: "https://rawcdn.githack.com/astral-sh/uv/f122387f898bca32ead6ffe461e8e3b3fa8c487d/docs/assets/logo-letter.svg",
+          usage:
+            "Extremely fast Python package installer and resolver written in Rust",
+        },
+        {
+          name: "Ruff",
+          icon: "https://rawcdn.githack.com/astral-sh/ruff/5707958dad27bab0087f8fc03759311948e59f77/docs/assets/bolt.svg",
+          usage:
+            "Extremely fast Python linter and code formatter written in Rust",
+        },
+        {
+          name: "Lerna",
+          icon: "lerna.js.org",
+          usage:
+            "Tool for managing JavaScript projects with multiple packages in a single repository (monorepo)",
+        },
+        {
+          name: "Esbuild",
+          icon: "esbuild.github.io",
+          usage: "Extremely fast JavaScript bundler and minifier",
+        },
       ],
     },
     utilities: {
@@ -415,11 +483,6 @@ const techStackData = {
     devops: {
       tools: [
         {
-          name: "Git",
-          icon: "git-scm.com",
-          usage: "Distributed version control system for tracking code changes",
-        },
-        {
           name: "GitHub",
           icon: "github.com",
           usage:
@@ -437,17 +500,6 @@ const techStackData = {
             "Platform for developing, shipping, and running applications in containers",
         },
         {
-          name: "npm",
-          icon: "npmjs.com",
-          usage: "Package manager for JavaScript and Node.js applications",
-        },
-        {
-          name: "ESLint",
-          icon: "eslint.org",
-          usage:
-            "JavaScript linting tool for identifying and fixing code quality issues",
-        },
-        {
           name: "PyCharm",
           icon: "jetbrains.com",
           usage: "Integrated development environment for Python development",
@@ -457,12 +509,6 @@ const techStackData = {
           icon: "yarnpkg.com",
           usage:
             "Fast, reliable, and secure dependency management for JavaScript",
-        },
-        {
-          name: "pnpm",
-          icon: "https://cdn.brandfetch.io/idA03rMeg7/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1709852232671",
-          usage:
-            "Fast, disk space efficient package manager for JavaScript with strict dependency resolution",
         },
         {
           name: "Kibana",
@@ -518,12 +564,6 @@ const techStackData = {
             "Monitoring and analytics platform for cloud applications and infrastructure",
         },
         {
-          name: "Prettier",
-          icon: "prettier.io",
-          usage:
-            "Code formatter for maintaining consistent code style across teams",
-        },
-        {
           name: "AWS CloudFormation",
           icon: "https://cdn.brandfetch.io/idVoqFQ-78/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1691083841257",
           usage:
@@ -570,33 +610,16 @@ const techStackData = {
             "Secure tunneling service for exposing local servers to the internet",
         },
         {
-          name: "Esbuild",
-          icon: "esbuild.github.io",
-          usage: "Extremely fast JavaScript bundler and minifier",
-        },
-        {
           name: "Studio 3T",
           icon: "studio3t.com",
           usage:
             "Professional GUI and IDE for MongoDB with advanced query and aggregation tools",
         },
         {
-          name: "Lerna",
-          icon: "lerna.js.org",
-          usage:
-            "Tool for managing JavaScript projects with multiple packages in a single repository (monorepo)",
-        },
-        {
           name: "OpsLevel",
           icon: "opslevel.com",
           usage:
             "Service catalog and developer portal for managing microservices and infrastructure",
-        },
-        {
-          name: "Script Kit",
-          icon: "scriptkit.com",
-          usage:
-            "Tool for creating and running scripts with a simple interface for automating tasks and workflows",
         },
       ],
     },

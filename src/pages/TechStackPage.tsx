@@ -86,12 +86,18 @@ export function renderTechStackPage() {
                       key={`${category.id}:${tool.name}`}
                       className="tool-card group relative z-30 flex cursor-pointer items-center gap-3 rounded-xl bg-white/95 px-3 py-2 ring-1 ring-transparent transition-[transform,box-shadow,filter] duration-150 ease-out hover:z-40 hover:ring-indigo-100/60 active:ring-indigo-200/60"
                     >
-                      <span className="relative flex h-14 w-14 items-center justify-center rounded-lg bg-slate-100 text-slate-600">
+                      <span className="relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-lg bg-slate-100 text-slate-600">
+                        <img
+                          src={iconUrl}
+                          alt=""
+                          aria-hidden="true"
+                          className="absolute inset-0 h-full w-full scale-150 object-cover opacity-20 blur-xl saturate-50"
+                        />
                         <img
                           src={iconUrl}
                           alt={tool.name}
                           loading="lazy"
-                          className="h-10 w-10 rounded-lg object-contain"
+                          className="relative z-10 h-10 w-10 object-contain"
                         />
                       </span>
                       <span className="min-w-0 flex-1">
